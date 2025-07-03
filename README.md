@@ -1,12 +1,9 @@
-# SAREHOME - Real Estate Website
+# SAREHOME_DS - Real Estate Website
 
 ## 🏠 Project Description
 
-SAREHOME is a modern, responsive real estate website designed to showcase residential and commercial properties for sale and rent. Built with HTML5, CSS3, and JavaScript, the platform includes features such as property filtering, contact forms, and dynamic gallery displays to provide users with a smooth and informative browsing experience.
-
-## 🌐 Live Preview
-
-> *Currently no live preview available. You can run it locally using any static server.*
+SAREHOME_DS is a modern, responsive real estate website designed to showcase residential and commercial properties for sale and rent. 
+Built with HTML5, CSS3, and JavaScript, the platform includes features such as property filtering, contact forms, and dynamic gallery displays to provide users with a smooth and informative browsing experience.
 
 ## 📁 Project Structure
 
@@ -41,13 +38,13 @@ SAREHOME is a modern, responsive real estate website designed to showcase reside
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/bektas-sari/sarehome.git
+git clone https://github.com/bektas-sari/sarehome_ds.git
 ```
 
 2. Open `index.html` in your browser or use a local server:
 
 ```bash
-cd sarehome
+cd sarehome_ds
 python -m http.server 8000
 ```
 
