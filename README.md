@@ -55,16 +55,15 @@ python -m http.server 8000
 ## 🧑‍💼 Developer
 
 **Bektas Sari**
-Email: [bektas.sari@gmail.com](mailto:bektas.sari@gmail.com)
-GitHub: [bektas-sari](https://github.com/bektas-sari)
-LinkedIn: [linkedin.com/in/bektas-sari](https://www.linkedin.com/in/bektas-sari)
-Researchgate: [Bektas Sari](https://www.researchgate.net/profile/Bektas-Sari-3)
-Academia: [Independent Profile](https://independent.academia.edu/bektassari)
+Email: [bektas.sari@gmail.com](mailto:bektas.sari@gmail.com)<br>
+GitHub: [bektas-sari](https://github.com/bektas-sari)<br>
+LinkedIn: [linkedin.com/in/bektas-sari](https://www.linkedin.com/in/bektas-sari)<br>
+Researchgate: [Bektas Sari](https://www.researchgate.net/profile/Bektas-Sari-3)<br>
+Academia: [Independent Profile](https://independent.academia.edu/bektassari)<br>
 
 ## 📄 License
 
-This project is licensed under the [GNU GPL-2.0 License](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html).
+This project is licensed MIT License.
 
 ---
 
-> *"Your trusted real estate partner." — SAREHOME*
