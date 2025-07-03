@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - SAREHOME</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" style="text-decoration:none; color:inherit;">
+                <div class="logo" style="cursor:pointer;">
+                    <h1>SARE<span>HOME</span></h1>
+                    <p>Your trusted real estate partner</p>
+                </div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="gallery-hero">
+        <div class="container">
+            <h2>Property Gallery</h2>
+            <p>Browse our collection of beautiful properties</p>
+        </div>
+    </section>
+
+    <section class="gallery-filter">
+        <div class="container">
+            <div class="filter-options">
+                <button class="filter-btn active" data-filter="all">All Properties</button>
+                <button class="filter-btn" data-filter="sale">For Sale</button>
+                <button class="filter-btn" data-filter="rent">For Rent</button>
+                <button class="filter-btn" data-filter="house">Houses</button>
+                <button class="filter-btn" data-filter="apartment">Apartments</button>
+                <button class="filter-btn" data-filter="villa">Villas</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-grid-section">
+        <div class="container">
+            <div class="gallery-grid">
+                <div class="gallery-item sale house">
+                    <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Modern House">
+                    <div class="gallery-overlay">
+                        <h3>Modern Family Home</h3>
+                        <p>$450,000 | 4 Beds | 3 Baths</p>
+                        <a href="#" class="view-btn">View Details</a>
+                    </div>
+                </div>
+                <div class="gallery-item rent apartment">
+                    <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Luxury Apartment">
+                    <div class="gallery-overlay">
+                        <h3>Luxury Downtown Apartment</h3>
+                        <p>$2,500/month | 2 Beds | 2 Baths</p>
+                        <a href="#" class="view-btn">View Details</a>
+                    </div>
+                </div>
+                <div class="gallery-item sale villa">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Modern Villa">
+                    <div class="gallery-overlay">
+                        <h3>Modern Beachfront Villa</h3>
+                        <p>$1,200,000 | 5 Beds | 4 Baths</p>
+                        <a href="#" class="view-btn">View Details</a>
+                    </div>
+                </div>
+                <div class="gallery-item rent house">
+                    <img src="https://images.unsplash.com/photo-1513584684374-8bab748fbf90?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Cozy Cottage">
+                    <div class="gallery-overlay">
+                        <h3>Cozy Countryside Cottage</h3>
+                        <p>$1,800/month | 3 Beds | 2 Baths</p>
+                        <a href="#" class="view-btn">View Details</a>
+                    </div>
+                </div>
+                <div class="gallery-item sale apartment">
+                    <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="City Apartment">
+                    <div class="gallery-overlay">
+                        <h3>City Center Apartment</h3>
+                        <p>$320,000 | 1 Bed | 1 Bath</p>
+                        <a href="#" class="view-btn">View Details</a>
+                    </div>
+                </div>
+                <div class="gallery-item rent villa">
+                    <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Luxury Villa">
+                    <div class="gallery-overlay">
+                        <h3>Luxury Hillside Villa</h3>
+                        <p>$4,500/month | 6 Beds | 5 Baths</p>
+                        <a href="#" class="view-btn">View Details</a>
+                    </div>
+                </div>
+                <div class="gallery-item sale house">
+                    <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Suburban Home">
+                    <div class="gallery-overlay">
+                        <h3>Suburban Family Home</h3>
+                        <p>$380,000 | 4 Beds | 2.5 Baths</p>
+                        <a href="#" class="view-btn">View Details</a>
+                    </div>
+                </div>
+                <div class="gallery-item rent apartment">
+                    <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Studio Apartment">
+                    <div class="gallery-overlay">
+                        <h3>Modern Studio Apartment</h3>
+                        <p>$1,200/month | Studio | 1 Bath</p>
+                        <a href="#" class="view-btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for property details -->
+    <div id="property-modal" style="display:none; position:fixed; z-index:9999; left:0; top:0; width:100vw; height:100vh; background:rgba(0,0,0,0.6); align-items:center; justify-content:center;">
+        <div style="background:#fff; padding:32px 24px; border-radius:8px; max-width:90vw; max-height:90vh; overflow:auto; position:relative;">
+            <button id="modal-close" style="position:absolute; top:8px; right:12px; background:none; border:none; font-size:1.5em; cursor:pointer;">&times;</button>
+            <h2 id="modal-title"></h2>
+            <p id="modal-desc"></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SAREHOME</h3>
+                    <p>Your trusted partner in real estate since 2010. We help you find properties that match your lifestyle and budget.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Real Estate Ave, New York</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@sarehome.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bektas. All rights reserved.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="javascript.js"></script>
+    <script>
+    // Gallery filter functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+
+                const filter = this.getAttribute('data-filter');
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.classList.contains(filter)) {
+                        item.style.display = '';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Modal functionality for View Details
+        const modal = document.getElementById('property-modal');
+        const modalTitle = document.getElementById('modal-title');
+        const modalDesc = document.getElementById('modal-desc');
+        const modalClose = document.getElementById('modal-close');
+        document.querySelectorAll('.view-btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const overlay = this.closest('.gallery-overlay');
+                const title = overlay.querySelector('h3').textContent;
+                const desc = overlay.querySelector('p').textContent;
+                modalTitle.textContent = title;
+                modalDesc.textContent = desc;
+                modal.style.display = 'flex';
+            });
+        });
+        modalClose.addEventListener('click', function() {
+            modal.style.display = 'none';
+        });
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) modal.style.display = 'none';
+        });
+    });
+    </script>
+</body>
+</html>

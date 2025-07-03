@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAREHOME - Find Your Dream Property</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+                <a href="index.html" style="text-decoration:none; color:inherit;">
+                <div class="logo" style="cursor:pointer;">
+                    <h1>SARE<span>HOME</span></h1>
+                    <p>Your trusted real estate partner</p>
+                </div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Find Your Perfect Home</h2>
+            <p>Discover properties that match your lifestyle</p>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search by location, price or type...">
+                <button id="searchBtn"><i class="fas fa-search"></i> Search</button>
+                <div class="filters">
+                    <select id="propertyType">
+                        <option value="all">All Types</option>
+                        <option value="house">House</option>
+                        <option value="apartment">Apartment</option>
+                        <option value="villa">Villa</option>
+                    </select>
+                    <select id="transactionType">
+                        <option value="all">Buy/Rent</option>
+                        <option value="sale">For Sale</option>
+                        <option value="rent">For Rent</option>
+                    </select>
+                    <select id="priceRange">
+                        <option value="all">Any Price</option>
+                        <option value="100000">Under $100,000</option>
+                        <option value="300000">$100,000 - $300,000</option>
+                        <option value="500000">$300,000 - $500,000</option>
+                        <option value="500001">Over $500,000</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-properties">
+        <div class="container">
+            <h2>Featured Properties</h2>
+            <div class="properties-grid" id="propertiesGrid">
+                <!-- Properties will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-home"></i>
+                    <h3>Property Sales</h3>
+                    <p>Find your dream home from our extensive collection of properties for sale.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-key"></i>
+                    <h3>Property Rental</h3>
+                    <p>Discover comfortable rental properties that fit your budget and needs.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-building"></i>
+                    <h3>Property Valuation</h3>
+                    <p>Get accurate valuations for your property from our expert team.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Client">
+                    <p>"SAREHOME helped me find my perfect apartment in just two weeks. Their service was exceptional!"</p>
+                    <h4>Sarah Johnson</h4>
+                </div>
+                <div class="testimonial">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client">
+                    <p>"Professional, reliable, and knowledgeable. I would recommend them to anyone looking to buy property."</p>
+                    <h4>Michael Brown</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SAREHOME</h3>
+                    <p>Your trusted partner in real estate since 2010. We help you find properties that match your lifestyle and budget.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Real Estate Ave, New York</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@sarehome.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bektas. All rights reserved.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="javascript.js"></script>
+    <script>
+    // Example property data
+    const properties = [
+        {
+            title: "Modern Family Home",
+            type: "house",
+            transaction: "sale",
+            price: 450000,
+            location: "New York",
+            img: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+            desc: "4 Beds | 3 Baths"
+        },
+        {
+            title: "Luxury Downtown Apartment",
+            type: "apartment",
+            transaction: "rent",
+            price: 2500,
+            location: "Los Angeles",
+            img: "https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+            desc: "2 Beds | 2 Baths"
+        },
+        {
+            title: "Modern Beachfront Villa",
+            type: "villa",
+            transaction: "sale",
+            price: 1200000,
+            location: "Miami",
+            img: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+            desc: "5 Beds | 4 Baths"
+        },
+        {
+            title: "Cozy Countryside Cottage",
+            type: "house",
+            transaction: "rent",
+            price: 1800,
+            location: "Texas",
+            img: "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+            desc: "3 Beds | 2 Baths"
+        },
+        {
+            title: "City Center Apartment",
+            type: "apartment",
+            transaction: "sale",
+            price: 320000,
+            location: "Chicago",
+            img: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+            desc: "1 Bed | 1 Bath"
+        },
+        {
+            title: "Luxury Hillside Villa",
+            type: "villa",
+            transaction: "rent",
+            price: 4500,
+            location: "San Francisco",
+            img: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+            desc: "6 Beds | 5 Baths"
+        }
+    ];
+
+    function renderProperties(list) {
+        const grid = document.getElementById('propertiesGrid');
+        grid.innerHTML = '';
+        if (list.length === 0) {
+            grid.innerHTML = '<p>No properties found.</p>';
+            return;
+        }
+        list.forEach(p => {
+            const priceText = p.transaction === 'rent' ? `$${p.price}/month` : `$${p.price.toLocaleString()}`;
+            grid.innerHTML += `
+                <div class="property-card">
+                    <img src="${p.img}" alt="${p.title}">
+                    <div class="property-info">
+                        <h3>${p.title}</h3>
+                        <p>${priceText} | ${p.desc}</p>
+                        <p>${p.location} | ${capitalize(p.type)} | ${capitalize(p.transaction)}</p>
+                    </div>
+                </div>
+            `;
+        });
+    }
+
+    function capitalize(str) {
+        return str.charAt(0).toUpperCase() + str.slice(1);
+    }
+
+    function filterProperties() {
+        const search = document.getElementById('searchInput').value.toLowerCase();
+        const type = document.getElementById('propertyType').value;
+        const transaction = document.getElementById('transactionType').value;
+        const priceRange = document.getElementById('priceRange').value;
+
+        let filtered = properties.filter(p => {
+            // Search by title, location, type
+            const matchesSearch =
+                p.title.toLowerCase().includes(search) ||
+                p.location.toLowerCase().includes(search) ||
+                p.type.toLowerCase().includes(search) ||
+                p.transaction.toLowerCase().includes(search) ||
+                p.price.toString().includes(search);
+
+            // Filter by type
+            const matchesType = (type === 'all') || (p.type === type);
+
+            // Filter by transaction
+            const matchesTransaction = (transaction === 'all') || (p.transaction === transaction);
+
+            // Filter by price
+            let matchesPrice = true;
+            if (priceRange === '100000') matchesPrice = p.price < 100000;
+            else if (priceRange === '300000') matchesPrice = p.price >= 100000 && p.price <= 300000;
+            else if (priceRange === '500000') matchesPrice = p.price > 300000 && p.price <= 500000;
+            else if (priceRange === '500001') matchesPrice = p.price > 500000;
+
+            return matchesSearch && matchesType && matchesTransaction && matchesPrice;
+        });
+
+        renderProperties(filtered);
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        renderProperties(properties);
+
+        document.getElementById('searchBtn').addEventListener('click', filterProperties);
+        document.getElementById('searchInput').addEventListener('keyup', function(e) {
+            if (e.key === 'Enter') filterProperties();
+        });
+        document.getElementById('propertyType').addEventListener('change', filterProperties);
+        document.getElementById('transactionType').addEventListener('change', filterProperties);
+        document.getElementById('priceRange').addEventListener('change', filterProperties);
+    });
+    </script>
+</body>
+</html>
